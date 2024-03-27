@@ -17,7 +17,7 @@ const BasketProduct = sequelize.define("basket_device", {
     id: {type: DataTypes.INTEGER, primaryKey: true,  autoIncrement: true},
 });
 
-const Category = sequelize.define("category", {
+const Category = sequelize.define("categories", {
     id: {type: DataTypes.INTEGER, primaryKey: true,  autoIncrement: true},
     name: {type: DataTypes.STRING, allowNull: false},
     image: {type: DataTypes.STRING, allowNull: false},
