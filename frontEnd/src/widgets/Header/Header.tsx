@@ -1,5 +1,4 @@
 import {Container, HeaderLink} from "../../app/styles/components.ts";
-import Logo from "../../ui/Icon/Logo.tsx";
 import {
     HeaderBottomStyled,
     HeaderLinkWrapper,
@@ -30,7 +29,6 @@ export default function Header(): JSX.Element {
             </HeaderTopStyled>
             <HeaderBottomStyled>
                 <Container>
-                    <Logo />
                 </Container>
             </HeaderBottomStyled>
 
