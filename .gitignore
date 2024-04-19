@@ -19,6 +19,7 @@ output.json #Since Android Studio 3.0
 
 # Intellij
 *.iml
+.idea
 .idea/workspace.xml
 .idea/libraries
 
