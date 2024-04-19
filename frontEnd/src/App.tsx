@@ -1,4 +1,4 @@
-import GlobalStyle from "./styles/global.ts";
+import GlobalStyle from "./app/styles/global.ts";
 import Main from "./pages/Main";
 
 function App() {

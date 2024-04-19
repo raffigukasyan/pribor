@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {baseTheme} from "../../styles/theme.ts";
+import {baseTheme} from "../../app/styles/theme.ts";
 
 export const HeaderStyled = styled.header`
     width: 100%;
@@ -13,7 +13,7 @@ export const HeaderTopStyled = styled.div`
 
 export const HeaderBottomStyled = styled.div`
     width: 100%;
-    padding: 30px 0;
+    padding: 15px 0;
     background: ${baseTheme.colors.background};
 `
 
