@@ -7,6 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+.gradle
+build/
+.navigation
+captures/
+output.json #Since Android Studio 3.0
+
+
+# Intellij
+*.iml
+.idea/workspace.xml
+.idea/libraries
+
+
 node_modules
 dist
 dist-ssr
