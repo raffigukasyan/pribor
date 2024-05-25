@@ -7,5 +7,8 @@ export default createGlobalStyle`
       padding: 0;
     }
     
+    body {
+        font-family: 'Montserrat', sans-serif;
+    }
     
 `

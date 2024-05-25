@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import {baseTheme} from "../../app/styles/theme.ts";
+import {baseTheme} from "../../../shared/styles/theme.ts";
 
 export const HeaderStyled = styled.header`
     width: 100%;
+    position: relative;
 `;
 
 export const HeaderTopStyled = styled.div`
@@ -27,4 +28,10 @@ export const HeaderLinkWrapper = styled.div`
     display: flex;
     align-items: center;
     column-gap: 15px;
+`
+
+export const HeaderBottomWrapper = styled.div`
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
 `

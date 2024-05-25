@@ -1,4 +1,4 @@
-import Header from "../../widgets/Header/Header.tsx";
+import {Header} from "../../widgets/header";
 
 export default function Main():JSX.Element {
     return <Header />

@@ -5,9 +5,10 @@ export const Container = styled.div`
     margin: 0 auto;
 `;
 
-export const HeaderLink = styled.a`
+export const Link = styled.a`
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #898888;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
 `;
