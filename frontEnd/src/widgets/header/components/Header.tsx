@@ -12,6 +12,7 @@ import {Panel} from "../../../entities/catalog/index.ts";
 
 import {CATEGORY_LINKS} from "../../../shared/consts/index.ts";
 import {ICategoryLinks} from "../../../shared/types/index.ts";
+import {Search} from "../../../features/search-header/index.ts";
 
 const navigationLinks = CATEGORY_LINKS.map((link:ICategoryLinks, idx:number):JSX.Element => {
     return (
@@ -39,6 +40,7 @@ export const Header  = () =>  {
                     <HeaderBottomWrapper>
                         <Logo />
                         <Panel />
+                        <Search />
                     </HeaderBottomWrapper>
                 </Container>
             </HeaderBottomStyled>
