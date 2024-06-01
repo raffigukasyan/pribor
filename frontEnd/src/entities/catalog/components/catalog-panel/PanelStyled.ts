@@ -55,7 +55,7 @@ export const PanelCatalog = styled.div<{$isOpen: boolean}>`
     transition-property: clip;
     transition-duration: 0.8s;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    clip: ${({$isOpen}) => $isOpen ? 'rect(auto, auto, 20rem, auto)' : ' rect(auto, auto, 0, auto)'};
+    clip: ${({$isOpen}) => $isOpen ? 'rect(auto, auto, 40rem, auto)' : ' rect(auto, auto, 0, auto)'};
     overflow: ${({$isOpen}) => $isOpen ? 'visible' : 'hidden'};
 `
 
@@ -67,16 +67,34 @@ export const CatalogWrapper = styled.div`
 `
 
 export const CatalogMenu = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 20px;
+    gap: 2.5rem;
+    padding: 1.5rem 0;
 `
 
 export const CatalogMenuItem = styled.div`
     font-size: 18px;
     color: ${baseTheme.colors.color};
     font-weight: 500;
+`
+
+export const CatalogMenuItemTitle = styled.p`
+    font-size: 20px;
     cursor: pointer;
+    margin-bottom: 2rem;
+`
+
+export const CatalogMenuItemLink = styled.li`
+    font-size: 16px;
+    font-weight: 500;
+    list-style: none;
+`
+export const CatalogMenuItemSubMenu = styled.ul`
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .7rem;
+    padding-top: .5rem;
 `
