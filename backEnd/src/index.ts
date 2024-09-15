@@ -1,18 +1,21 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
+import dotenv from 'dotenv';
+import express, {Express} from 'express';
+import cors from "cors";
 
-const sequelize = require('./db.js');
-const modules = require('./models/models');
-const router = require('./routes/index');
-const PORT = process.env.PORT || 5000;
+import {sequelize} from "./db";
 
-const app = express();
+// import modules from "./models/models"
+// const router = require('./routes');
+
+dotenv.config();
+const PORT: string | number = process.env.PORT || 5000;
+
+const app:Express = express();
 
 
 app.use(cors());
 app.use(express.json());
-app.use('/', router);
+// app.use('/', router);
 
 const start = async () => {
     try {

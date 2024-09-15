@@ -1,7 +1,8 @@
-const sequelize = require('../db');
-const {DataTypes} = require("sequelize");
+import {sequelize} from "../db";
 
-const User = sequelize.define("users", {
+import {DataTypes} from "sequelize";
+
+const User= sequelize.define("users", {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     firstName: {type: DataTypes.STRING, allowNull: false},
     lastName: {type: DataTypes.STRING,},
@@ -13,7 +14,7 @@ const Basket = sequelize.define("basket", {
     id: {type: DataTypes.INTEGER, primaryKey: true,  autoIncrement: true},
 });
 
-const BasketProduct = sequelize.define("basket_device", {
+const BasketProduct = sequelize.define("basket_products", {
     id: {type: DataTypes.INTEGER, primaryKey: true,  autoIncrement: true},
 });
 
@@ -82,7 +83,7 @@ Basket.hasMany(Orders);
 Orders.belongsTo(Basket);
 
 
-module.exports = {
+export {
     User,
     Basket,
     BasketProduct,
