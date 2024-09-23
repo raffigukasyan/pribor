@@ -4,10 +4,10 @@ import cors from "cors";
 
 import {sequelize} from "./db";
 
-// import modules from "./models/models"
 // const router = require('./routes');
 
 dotenv.config();
+console.log(process.env.DATABASE_NAME, 'qqqq');
 const PORT: string | number = process.env.PORT || 5000;
 
 const app:Express = express();
@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 // app.use('/', router);
 
-const start = async () => {
+const start = async ():Promise<void> => {
     try {
         await sequelize.authenticate();
         await sequelize.sync();
