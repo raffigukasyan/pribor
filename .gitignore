@@ -53,4 +53,5 @@ public
 # Distribution directories
 dist/
 
+backEnd/static/
 priborinform.sql
